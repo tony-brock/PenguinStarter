@@ -1,11 +1,14 @@
 var classPromise = d3.json("classData.json");
 
+
 classPromise.then(function(student)
                   {
-                    console.log(student);
-                  }
+                    console.log("Data Collected",student);
+},
                   function(error)
                   {
-                    console.log("error",error);
-                  });
+                    console.log("Mishap", error);
+});
+                  
+
 
